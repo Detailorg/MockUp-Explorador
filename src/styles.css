@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5 {
 .main-timeline .timeline-content{
   color: black;
   min-height: 50vh;
-  background-image: linear-gradient(white, #99D5B3);
+  background-image: linear-gradient(white,#FEF79F);
   text-align: right;
   padding: 30px 40px 30px 40px;
   margin: 0 auto;
@@ -329,15 +329,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-timeline .timeline:nth-child(4n+2) .timeline-content {
-  background-image: linear-gradient(white, #99DAF4);
+  background-image: linear-gradient(white,#F59BA1);
   text-align: left; 
 }
 .main-timeline .timeline:nth-child(4n+3) .timeline-content {
-  background-image: linear-gradient(white,#F59BA1);
+  background-image: linear-gradient(white, #99DAF4);
   text-align: right;
 }
 .main-timeline .timeline:nth-child(4n+4) .timeline-content {
-  background-image: linear-gradient(white,#FEF79F);
+  background-image: linear-gradient(white, #99D5B3);
   text-align: left;
 }
 
