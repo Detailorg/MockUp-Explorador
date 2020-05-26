@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Para el sistema de star-Rating de el Timeline -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- script de datos cogidos del JSON -->
+  <script src="./src/app.js"></script>
 
   <title>dTeiL.org</title>
   <link rel="icon" href="src/assets/favicon.ico">
@@ -131,81 +133,190 @@
                   <!-- Origen -->
                   <div class="timeline mb-5 pb-5" data-aos="fade-right">
                     <div class="timeline-content">
-                        <h3 class="title center-heading">Origen</h3>
-                        <img class="img-fluid center-img" src="src/assets/dTeilorg_Explorador_Iconos_origen.svg" alt="Origen" width="250">
-                        <p class="description">
-                          La digitalización e interconexión de cualquier proceso para mejeror la interacción con multiples partes y adicción de capas de ejecución automatizadas.<br> <br>
-                          Que permitan la mejora contínua aportando nueva información de manera descentralizada abiertas a su conexión para el intercambio de valor entre participantes, como por ejemplo una cadena de suministros donde la trazabilidad 
-                          de las operaciones está garantizada. 
-                          <br> <br>
-                        </p>
+                      <h3 class="title center-heading">Origen</h3>
+                      <img class="img-fluid center-img" src="src/assets/dTeilorg_Explorador_Iconos_origen.svg" alt="Origen" width="250">
+                      <p class="description text-center">Este aceite proviene de <span id="nValeTotal">31</span><br> aportes de diferentes agricultores </p>
+                      <br>
+
+                      <div id="accordionOrigen">
+                        <div class="card">
+                            <div class="card-header" id="HeaderZero">
+                              <a class="collapsed card-link text-center" data-toggle="collapse" href="#collapseOrigen">
+                                  <p class="description accordionHeader">El <span id="porcentajeTotalOrigenProvincia">100%</span> proviene de la provincia de <br><span id="Provincia1">Córdoba</span> </p>
+                              </a>
+                            </div>
+                            <div id="collapseOrigen" class="panel-collapse in" data-parent="#accordionOrigen">
+                              <div class="card-body">
+                                
+
+                                <div id="accordionOrigenMunicipio1">
+                                  <div class="card">
+                                      <div class="card-header" id="HeaderZero">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseOrigenMunicipio1">
+                                            <p class="description accordionHeader">El <span id="porcentajeTotalOrigenMunicipio">51,99 %</span> proviene del municipio de <span id="Municipio1">Doña Mecía</span> </p>
+                                        </a>
+                                      </div>
+                                      <div id="collapseOrigenMunicipio1" class="panel-collapse in" data-parent="#accordionOrigenMunicipio1">
+                                        <div class="card-body">
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">8,54 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">3</span> de la parcela <span id="parcelaVale">12</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">5,4 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">14</span> de la parcela <span id="parcelaVale">6</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">5,76 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">5</span> de la parcela <span id="parcelaVale">12</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">13,28 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">78</span> de la parcela <span id="parcelaVale">144</span>
+                                            </li>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div id="accordionOrigenMunicipio2">
+                                  <div class="card">
+                                      <div class="card-header" id="HeaderZero">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseOrigenMunicipio2">
+                                            <p class="description accordionHeader">El <span id="porcentajeTotalOrigenMunicipio">33,77 %</span> proviene del municipio de <span id="Municipio2">Cabra</span> </p>
+                                        </a>
+                                      </div>
+                                      <div id="collapseOrigenMunicipio2" class="panel-collapse in" data-parent="#accordionOrigenMunicipio2">
+                                        <div class="card-body">
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">8,54 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">3</span> de la parcela <span id="parcelaVale">12</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">5,4 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">14</span> de la parcela <span id="parcelaVale">6</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">5,76 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">5</span> de la parcela <span id="parcelaVale">12</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">13,28 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">78</span> de la parcela <span id="parcelaVale">144</span>
+                                            </li>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div id="accordionOrigenMunicipio3">
+                                  <div class="card">
+                                      <div class="card-header" id="HeaderZero">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseOrigenMunicipio3">
+                                            <p class="description accordionHeader">El <span id="porcentajeTotalOrigenMunicipio">8,74 %</span> proviene del municipio de <span id="Municipio3">Baena</span> </p>
+                                        </a>
+                                      </div>
+                                      <div id="collapseOrigenMunicipio3" class="panel-collapse in" data-parent="#accordionOrigenMunicipio3">
+                                        <div class="card-body">
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">8,54 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">3</span> de la parcela <span id="parcelaVale">12</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">5,4 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">14</span> de la parcela <span id="parcelaVale">6</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">5,76 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">5</span> de la parcela <span id="parcelaVale">12</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">13,28 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">78</span> de la parcela <span id="parcelaVale">144</span>
+                                            </li>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div id="accordionOrigenMunicipio4">
+                                  <div class="card">
+                                      <div class="card-header" id="HeaderZero">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseOrigenMunicipio4">
+                                            <p class="description accordionHeader">El <span id="porcentajeTotalOrigenMunicipio">5,50 %</span> proviene del municipio de <span id="Municipio4">Zuheros</span> </p>
+                                        </a>
+                                      </div>
+                                      <div id="collapseOrigenMunicipio4" class="panel-collapse in" data-parent="#accordionOrigenMunicipio4">
+                                        <div class="card-body">
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">8,54 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">3</span> de la parcela <span id="parcelaVale">12</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">5,4 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">14</span> de la parcela <span id="parcelaVale">6</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">5,76 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">5</span> de la parcela <span id="parcelaVale">12</span>
+                                            </li>
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se añadieron <span id="porcentajeTotal">13,28 %</span> de <span id="productoVale">ACEITUNA DE VUELO</span> del polígono: <span id="poligonoVale">78</span> de la parcela <span id="parcelaVale">144</span>
+                                            </li>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
 
                  <!-- Procesado -->
                  <div class="timeline" data-aos="fade-left">
                   <div class="timeline-content">
-                      <h3 class="title center-heading">Procesado</h3>
-                      <img class="img-fluid center-img" src="src/assets/dTeilorg_Explorador_Iconos_fabrica.svg" alt="Procesado" width="250">
-                      <p class="description text-center">Su contenido proviene del depósito número: <span class="loteDeposito">0400200120</span> </p>
-                        <br>
+                    <h3 class="title center-heading">Procesado</h3>
+                    <img class="img-fluid center-img" src="src/assets/dTeilorg_Explorador_Iconos_fabrica.svg" alt="Procesado" width="250">
+                    <p class="description text-center">Su contenido proviene del depósito número: <span id="loteDeposito">0400200120</span> </p>
+                    <br>
 
-                        <div id="accordionProcesado">
-                          <div class="card">
-                              <div class="card-header" id="HeaderZero">
-                                <a class="collapsed card-link text-center" data-toggle="collapse" href="#collapseProcesado">
-                                    <p class="description accordionHeader">El <span id="porcentajeTotalPreCata">100%</span> obtuvo un resultado<br>pre-cata de <span id="resultadoPreCataMoltura">OLIVA VIRGEN EXTRA</span> </p>
-                                </a>
-                              </div>
-                              <div id="collapseProcesado" class="panel-collapse in" data-parent="#accordionProcesado">
-                                <div class="card-body">
-                                  <ul>
-
-                                    <div id="accordionProcesadoPreCata1">
-                                      <div class="card">
-                                          <div class="card-header" id="HeaderZero">
-                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseProcesadoPreCata1">
-                                                <p class="description accordionHeader">El <span id="porcentajeTotalAcidez">60%</span> con una acidez del <span id="acidez">0.2</span> </p>
-                                            </a>
-                                          </div>
-                                          <div id="collapseProcesadoPreCata1" class="panel-collapse in" data-parent="#accordionProcesadoPreCata1">
-                                            <div class="card-body">
-                                              <ul>
-                                                <li>
-                                                  El <span id="fechaMoltura">01/01/2020</span> se procesó el <span id="porcentajeTotal">100 %</span>
-                                                </li>
-                                              </ul>
-                                            </div>
-                                          </div>
-                                      </div>
-                                    </div>
-
-                                    <div id="accordionProcesadoPreCata2">
-                                      <div class="card">
-                                          <div class="card-header" id="HeaderZero">
-                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseProcesadoPreCata2">
-                                                <p class="description accordionHeader">El <span id="porcentajeTotalAcidez">40%</span> con una acidez del <span id="acidez">0.3</span> </p>
-                                            </a>
-                                          </div>
-                                          <div id="collapseProcesadoPreCata2" class="panel-collapse" data-parent="#accordionProcesadoPreCata2">
-                                            <div class="card-body">
-                                              <ul>
-                                                <li>
-                                                  El <span id="fechaMoltura">01/01/2020</span> se procesó el <span id="porcentajeTotal">100 %</span>
-                                                </li>
-                                              </ul>
-                                            </div>
-                                          </div>
-                                      </div>
-                                    </div>
-
-                                  </ul>
-                                </div>
-                              </div>
+                    <div id="accordionProcesado">
+                      <div class="card">
+                          <div class="card-header" id="HeaderZero">
+                            <a class="collapsed card-link text-center" data-toggle="collapse" href="#collapseProcesado">
+                                <p class="description accordionHeader">El <span id="porcentajeTotalPreCata">100%</span> obtuvo un resultado<br>pre-cata de <span id="resultadoPreCataMoltura">OLIVA VIRGEN EXTRA</span> </p>
+                            </a>
                           </div>
-                        </div>
+                          <div id="collapseProcesado" class="panel-collapse" data-parent="#accordionProcesado">
+                            <div class="card-body">
 
-                      </p>
+                                <div id="accordionProcesadoPreCata1">
+                                  <div class="card">
+                                      <div class="card-header" id="HeaderZero">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseProcesadoPreCata1">
+                                            <p class="description accordionHeader">El <span id="porcentajeTotalAcidez">60%</span> con una acidez del <span id="acidez">0.2</span> </p>
+                                        </a>
+                                      </div>
+                                      <div id="collapseProcesadoPreCata1" class="panel-collapse" data-parent="#accordionProcesadoPreCata1">
+                                        <div class="card-body">
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se procesó el <span id="porcentajeTotal">100 %</span>
+                                            </li>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div id="accordionProcesadoPreCata2">
+                                  <div class="card">
+                                      <div class="card-header" id="HeaderZero">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseProcesadoPreCata2">
+                                            <p class="description accordionHeader">El <span id="porcentajeTotalAcidez">40%</span> con una acidez del <span id="acidez">0.3</span> </p>
+                                        </a>
+                                      </div>
+                                      <div id="collapseProcesadoPreCata2" class="panel-collapse" data-parent="#accordionProcesadoPreCata2">
+                                        <div class="card-body">
+                                            <li>
+                                              El <span id="fechaMoltura">01/01/2020</span> se procesó el <span id="porcentajeTotal">100 %</span>
+                                            </li>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
 
@@ -228,7 +339,6 @@
                             </div>
                             <div id="collapseEnvasado" class="panel-collapse in" data-parent="#accordionEnvasado">
                               <div class="card-body">
-                                <ul>
                                   <li>
                                     <span id="udLote">84</span> unidesde de: <span id="descripcionLote">BELL 0.5 L EL HENAZAR ROJA SELECCIÓN TEMPRANA</span>
                                   </li>
@@ -238,7 +348,6 @@
                                   <li>
                                     <span id="udLote">120</span> unidesde de: <span id="descripcionLote">DORICA 500 ML AOVE EL HENAZAR</span>
                                   </li>
-                                </ul>
                               </div>
                             </div>
                         </div>

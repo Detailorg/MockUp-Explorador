@@ -7,3 +7,15 @@ function menuFunction() {
     x.className = "topnav";
   }
 }
+
+/* Datos metidos en el DOM desde el JSON o Request al Relay */
+  // TimeLine
+    // Origen
+
+    // Procesado
+    // loteDeposito=>"0400200120": esto viene de:
+
+
+    // Envasado
+
+    // Valoraciones
