@@ -94,10 +94,11 @@ h1, h2, h3, h4, h5 {
 .bg1-custom {
   background-color: rgba(65, 65, 64, 0.6);
   border-radius: 30px;
+  z-index: 2;
 }
 
 .bg2-custom {
-  background-color: #e9e9e983;
+  background-color: #f5f5f5;
   border-radius: 30px;
   z-index: 2;
 }
@@ -128,14 +129,14 @@ h1, h2, h3, h4, h5 {
   color: turquoise;
 }
 
-/* .first {
+.first {
   animation-name: fade-out;
   animation-duration: 2s;
   transition-timing-function: 2s ease-in;
   animation-fill-mode: forwards;
   position: absolute;
   z-index: 12;
-} */
+}
 
 .bold {
   font-weight: 900;
@@ -151,15 +152,22 @@ h1, h2, h3, h4, h5 {
   opacity: 0;
 }
 
-/* .octogon {
+.octogon {
   height: 50vh;
   width: 50vh;
-  text-align: center;
+  /* text-align: center; */
   animation: octogon 1s ease-in-out .5s;
   animation-fill-mode: forwards; 
   position: relative;
-  z-index: 1;
-} */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-attachment: fixed;
+  /* background-repeat: no-repeat;
+  position: relative; */
+}
 
 .image-shadow {
   border-radius: 100px;
@@ -215,11 +223,11 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
-/* .logo {
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 /*
 .pyramid {
   position: relative;
@@ -344,7 +352,7 @@ h1, h2, h3, h4, h5 {
 .Contact {
   background-color: white;
   bottom: 0;
-  z-index: 1;
+  /* z-index: 1; */
   position: absolute;
   margin-top: 7px;
 }
@@ -468,6 +476,7 @@ h1, h2, h3, h4, h5 {
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  z-index: 2;
 }
 
 .cont-overlay:hover {
@@ -496,24 +505,22 @@ h1, h2, h3, h4, h5 {
 } 
 
 #Home {
-  background: url('assets/FondoBotella.png') bottom center repeat-x;
-  background-attachment: fixed;
+  background: url('assets/Botella.png') bottom center repeat-x;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
-  background-size: cover;
-  /* background-position: 50% 50%; */
   position: relative;
+  height: 100%;
   z-index: 2;
 }
 
-#Home .bottom-fade {
+/* #Home .bottom-fade {
   width: 100%;
   height: 110vh;
   bottom: 0;
   position: relative;
   background: url("assets/bottom-fade.svg") bottom center repeat-x;
-  /* background: url("assets/bottom-fade.png") bottom center repeat-x; */
   z-index: 3;
-}
+} */
 
 #Contact {
   position: relative;
@@ -521,14 +528,14 @@ h1, h2, h3, h4, h5 {
 
 #People {
   text-align: center;
-  background-image: url("assets/background-8.jpg");
+  /* background-image: url("assets/background-8.jpg"); */
   background-color: white;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   /* background-size: 40vh; */
   background-size: cover;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 @keyframes fade-out {
@@ -702,7 +709,7 @@ Star Rating
   position: relative;
   height: 3rem;
   width: 15rem; /* height x 5 (estrellas) */
-  background: url(off.svg);
+  background: url(/src/assets/off.svg);
   background-size: 3rem 3rem; /* Tiene que coincidir con background de starRatingLabel */
 }
 
