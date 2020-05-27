@@ -264,10 +264,10 @@
                             </div>
                         </div>
                       </div>
-                      
+
                       <br>
 
-                      <small">Estos datos provienen de la <a id="cidOrigen" href="https://ipfs.io/ipfs/QmPEji1Jat9LLvWGM8SDsKQ9jERLLrHNmqWiRQJ3UR4jNU">información en la blockchain</a></small>
+                      <small">Estos datos provienen de la<br><a id="cidOrigen" href="https://ipfs.io/ipfs/QmPEji1Jat9LLvWGM8SDsKQ9jERLLrHNmqWiRQJ3UR4jNU">información en la blockchain</a></small>
 
                     </div>
                 </div>
@@ -331,7 +331,7 @@
 
                     <br>
 
-                    <small">Estos datos provienen de la <a id="cidProcesado" href="https://ipfs.io/ipfs/QmZ1jZkgqVqzKiSHSpbSKfTx2HBaYVyEAr9GBuxu28t5DT">información en la blockchain</a></small>
+                    <small">Estos datos provienen de la<br><a id="cidProcesado" href="https://ipfs.io/ipfs/QmZ1jZkgqVqzKiSHSpbSKfTx2HBaYVyEAr9GBuxu28t5DT">información en la blockchain</a></small>
 
                   </div>
                 </div>
@@ -371,7 +371,7 @@
                         </div>
                       </div>
 
-                      <small>Estos datos provienen de la <a id="cidProcesado" href="https://ipfs.io/ipfs/QmWfTVJsYNNzJEU2PnqzcU7MwtU7YKzNE8jsXboTKSdKyh">información en la blockchain</a></small>
+                      <small>Estos datos provienen de la<br><a id="cidEnvasado" href="https://ipfs.io/ipfs/QmWfTVJsYNNzJEU2PnqzcU7MwtU7YKzNE8jsXboTKSdKyh">información en la blockchain</a></small>
 
                       <br>
                   </div>
@@ -406,7 +406,7 @@
                       <p id="premio1">DIPLOMA XII Concurso Provincial Aceite de Oliva Virgen Extra 2019, «Finalista en la categoría de Frutado Verde».</p>
                       <img id="imgDO" class="img-fluid center-img" src="src/assets/DO.png" alt="D.O." width="250">
 
-                      <small>Estos datos provienen de la <a id="cidProcesado" href="https://ipfs.io/ipfs/">información en la blockchain</a></small>
+                      <small>Estos datos provienen de la<br><a id="cidValoraciones" href="https://ipfs.io/ipfs/">información en la blockchain</a></small>
 
                     </div>
                 </div>
@@ -745,7 +745,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title" id="Validez_Title">Comprobación de Validez (<a href="https://gitlab.com/VGCif/criptorelay/-/blob/master/Tutorials/CHECK_MANUAL.md">Comprobación manual</a>):</h2>
+            <h2 class="modal-title" id="Validez_Title">Comprobación de Validez:</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -753,16 +753,40 @@
           <div class="modal-body">
             <h4>Datos inmutabilizados mostrados</h4>
             <br>
-            <p>En este explorador, se están mostrando los datos provenientes de los siguientes archivos:
+            <p>En este explorador, se están mostrando los datos provenientes de los siguientes archivos inmutabilizados en blockchain:
             </p>
             <ul>
-              <li> <h6>Correo electrónico:</h6> <a href="mailto:legal@dteil.org">legal@dteil.org</a> </li>
-              <li> <h6>Sitio Web:</h6> <a href="https://www.dteil.org">https://www.dteil.org</a></li>
+              <li> 
+                <h6><a id="cidOrigen" href="https://ipfs.io/ipfs/QmPEji1Jat9LLvWGM8SDsKQ9jERLLrHNmqWiRQJ3UR4jNU">Datos de origen</a></h6>
+              </li>
+              <li> 
+                <h6><a id="cidProcesado" href="https://ipfs.io/ipfs/QmZ1jZkgqVqzKiSHSpbSKfTx2HBaYVyEAr9GBuxu28t5DT">Datos de procesado</a></h6>
+              </li>
+              <li> 
+                <h6><a id="cidProcesado" href="https://ipfs.io/ipfs/QmWfTVJsYNNzJEU2PnqzcU7MwtU7YKzNE8jsXboTKSdKyh">Datos de envasado</a></h6>
+              </li>
+              <li> 
+                <h6><a id="cidValoraciones" href="https://ipfs.io/ipfs/">Datos de origen</a></h6>
+              </li>
             </ul>
+
+            <br>
+
+            <h4>Visualización de la blockchain</h4>
+
+            <p>Puede comprobar la Blockchain a través de cualquier explorador de Bitcoin, introduciendo el address:<br>
+              <span class="text-center" id="nodoInfoAddress">19Ds3C4t5DeER6pSazRLHXMtNBMTfbXb2U</span>
+            </p> 
+            <br>
+            <p>O siguiendo este link en el explorador de bloques de la blockchain de Bitcoin en:<br>
+              <a class="text-center" href="https://www.blockchain.com/btc/address/19Ds3C4t5DeER6pSazRLHXMtNBMTfbXb2U">blockchain.com/btc/</a>
+            </p>
             
-              <h4>Contacto</h4>
-              <br>
-              En caso que usted tenga cualquier duda o interés en este tipo de servicio puede contactarnos a través del <a href="mailto:hola@dteil.org">email de contacto</a> .
+            <br>
+
+            <h4>Contacto</h4>
+
+            En caso que usted tenga cualquier duda o interés en este tipo de servicio puede contactarnos a través del <a href="mailto:hola@dteil.org">email de contacto</a> .
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
