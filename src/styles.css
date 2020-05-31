@@ -29,6 +29,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Jost', sans-serif;
 }
 
+li {
+  text-align: left;
+  margin-bottom: .5em;
+}
+
 .aos-repair {
   overflow: hidden;
 }
@@ -175,20 +180,15 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.accordion-header-txt {
-  white-space: normal;
-  margin: 0;
-}
-
 .main-timeline {
   position: relative;
 }
 
 .main-timeline::before {
   content: '';
-  background-color: grey;
+  background-color: black;
   height: 100%;
-  width: 2px;
+  width: 1px;
   transform: translateX(-50%);
   position: absolute;
   left: 50%;
@@ -213,9 +213,9 @@ h1, h2, h3, h4, h5, h6 {
 .main-timeline .timeline::before,
 .main-timeline .timeline::after {
   content: '';
-  background-color: grey;
-  height: 2px;
-  width: 100px;
+  background-color: black;
+  height: 1px;
+  width: 40px;
   transform: translateY(-50%);
   position: absolute;
   right: 0;
@@ -231,7 +231,8 @@ h1, h2, h3, h4, h5, h6 {
 .main-timeline .timeline-content {
   color: black;
   min-height: 50vh;
-  background-image: linear-gradient(white, #FEF79F);
+  border-width: 1px;
+  border-style: solid;
   text-align: right;
   padding: 30px 40px 30px 40px;
   margin: 0 auto;
@@ -241,15 +242,28 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.main-timeline .title {
-  font-weight: 600;
-  text-transform: uppercase;
+.accordion-header-txt {
+  white-space: normal;
   margin: 0;
 }
 
-.main-timeline .description {
-  font-size: 14px;
-  letter-spacing: 1px;
+.arrow > a {
+  display: block;
+  position: relative;
+}
+.arrow > a:after {
+  content: "\f078"; /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+}
+.arrow > a[aria-expanded="true"]:after {
+  content: "\f077"; /* fa-chevron-up */
+}
+
+.main-timeline .title {
+  font-weight: 600;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -270,20 +284,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-timeline .timeline:nth-child(4n+2) .timeline-content {
-  background-image: linear-gradient(white, #F59BA1);
   text-align: left;
 }
 
 .main-timeline .timeline:nth-child(4n+3) .timeline-content {
-  background-image: linear-gradient(white, #99DAF4);
-  text-align: right;
-}
-
-.main-timeline .timeline:nth-child(4n+4) .timeline-content {
-  background-image: linear-gradient(white, #99D5B3);
   text-align: left;
 }
 
+.main-timeline .timeline:nth-child(4n+4) .timeline-content {
+  text-align: left;
+}
+
+.card:nth-child(even) {
+  background-color: rgb(245, 245, 245);
+}
 
 /* ######################################
 Star Rating 
@@ -368,7 +382,7 @@ Star Rating
   margin: 0 auto;
   margin-top: 1em;
   padding-bottom: 1em;
-  position: static;
+  position: relative;
   animation: pulsate 1.5s ease-in-out 0s infinite both;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -383,7 +397,7 @@ Star Rating
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-  position: static;
+  position: relative;
   animation-play-state: paused;
 }
 
@@ -648,7 +662,6 @@ Star Rating
   .main-timeline .timeline-content {
     color: black;
     min-height: 50vh;
-    background-color: #99D5B3;
     text-align: left;
     padding: 30px 40px 30px 40px;
     margin: 0 auto;
@@ -659,17 +672,14 @@ Star Rating
   }
 
   .main-timeline .timeline:nth-child(4n+2) .timeline-content {
-    background-color: #99DAF4;
     text-align: left;
   }
 
   .main-timeline .timeline:nth-child(4n+3) .timeline-content {
-    background-color: #F59BA1;
     text-align: left;
   }
 
   .main-timeline .timeline:nth-child(4n+4) .timeline-content {
-    background-color: #FEF79F;
     text-align: left;
   }
 }
