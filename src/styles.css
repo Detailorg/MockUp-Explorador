@@ -25,7 +25,7 @@ textarea {
   resize: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: 'Jost', sans-serif;
 }
 
@@ -256,18 +256,30 @@ li {
   margin: 0;
 }
 
+.fa-search {
+  color: rgb(148, 148, 148);
+  font-size: medium;
+}
+
+.distinction {
+  border-bottom-width: 2px;
+}
+
 .arrow > a {
   display: block;
   position: relative;
 }
 .arrow > a:after {
-  content: "\f078"; /* fa-chevron-down */
-  font-family: 'FontAwesome';
+  content: "\f078";
+  font-weight: 900;
+  font-family: 'Font Awesome\ 5 Free';
+  font-size: x-small;
+  color: rgb(200, 200, 200);
   position: absolute;
   right: 0;
 }
 .arrow > a[aria-expanded="true"]:after {
-  content: "\f077"; /* fa-chevron-up */
+  content: "\f077";
 }
 
 .main-timeline .title {
@@ -624,7 +636,7 @@ Star Rating
     width: 33%;
   }
   #Home {
-    top: 2em;
+    top: 2em; /*Cambiar parámetro si hay problemas al cambiar foto de fondo*/
   }
 }
 
@@ -695,6 +707,6 @@ Star Rating
     text-align: left;
   }
   #Home {
-    top: 2em;
+    top: 2em; /*Cambiar parámetro si hay problemas al cambiar foto de fondo*/
   }
 }

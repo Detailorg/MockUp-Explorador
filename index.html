@@ -14,10 +14,10 @@
     href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
     integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Para el sistema de star-Rating de el Timeline -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
   <!-- script de datos cogidos del JSON -->
-  <script src="./src/app.js"></script>
+  <script src="src/app.js"></script>
 
   <title>Trazabilidad del aceite</title>
   <link rel="icon" href="src/assets/favicon.ico">
@@ -109,7 +109,7 @@
                 <br>
                 <div class="accordionOrigen">
                   <div class="card">
-                    <div class="card-header" id="headerOrigen">
+                    <div class="card-header distinction" id="headerOrigen">
                       <div class="arrow">
                       <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOrigen"
                         aria-expanded="true" aria-controls="collapseOrigen">
@@ -132,8 +132,8 @@
                               <a class="btn btn-link collapsed" data-toggle="collapse"
                                 data-target="#collapseOrigenMunicipio1" aria-expanded="false"
                                 aria-controls="collapseOrigenMunicipio1">
-                                <p class="accordion-header-txt">El <span id="porcentajeTotalOrigenMunicipio">51,99
-                                    %</span> proviene del municipio de <span id="Municipio1">Doña Mencía</span> </p>
+                                <h6 class="accordion-header-txt">El <span id="porcentajeTotalOrigenMunicipio">51,99
+                                    %</span> proviene del municipio de <span id="Municipio1">Doña Mencía</span> </h6>
                               </a>
                             </div>
                             </div>
@@ -176,8 +176,8 @@
                               <a class="btn btn-link collapsed" data-toggle="collapse"
                                 data-target="#collapseOrigenMunicipio2" aria-expanded="false"
                                 aria-controls="collapseOrigenMunicipio2">
-                                <p class="accordion-header-txt">El <span id="porcentajeTotalOrigenMunicipio">33,77
-                                    %</span> proviene del municipio de <span id="Municipio2">Cabra</span> </p>
+                                <h6 class="accordion-header-txt">El <span id="porcentajeTotalOrigenMunicipio">33,77
+                                    %</span> proviene del municipio de <span id="Municipio2">Cabra</span> </h6>
                               </a>
                             </div>
                             </div>
@@ -220,8 +220,8 @@
                               <a class="btn btn-link collapsed" data-toggle="collapse"
                                 data-target="#collapseOrigenMunicipio3" aria-expanded="false"
                                 aria-controls="collapseOrigenMunicipio3">
-                                <p class="accordion-header-txt">El <span id="porcentajeTotalOrigenMunicipio">8,74
-                                    %</span> proviene del municipio de <span id="Municipio3">Baena</span> </p>
+                                <h6 class="accordion-header-txt">El <span id="porcentajeTotalOrigenMunicipio">8,74
+                                    %</span> proviene del municipio de <span id="Municipio3">Baena</span> </h6>
                               </a>
                             </div>
                             </div>
@@ -264,8 +264,8 @@
                               <a class="btn btn-link collapsed" data-toggle="collapse"
                                 data-target="#collapseOrigenMunicipio4" aria-expanded="false"
                                 aria-controls="collapseOrigenMunicipio4">
-                                <p class="accordion-header-txt">El <span id="porcentajeTotalOrigenMunicipio">5,50
-                                    %</span> proviene del municipio de <span id="Municipio4">Zuheros</span> </p>
+                                <h6 class="accordion-header-txt">El <span id="porcentajeTotalOrigenMunicipio">5,50
+                                    %</span> proviene del municipio de <span id="Municipio4">Zuheros</span> </h6>
                               </a>
                             </div>
                             </div>
@@ -311,8 +311,8 @@
                 <br>
 
                 <small>Estos datos provienen de la<br><a id="cidOrigen"
-                    href="https://ipfs.io/ipfs/QmPEji1Jat9LLvWGM8SDsKQ9jERLLrHNmqWiRQJ3UR4jNU">información en la
-                    blockchain</a></small>
+                    href="https://ipfs.io/ipfs/QmPEji1Jat9LLvWGM8SDsKQ9jERLLrHNmqWiRQJ3UR4jNU">
+                    Blockchain <i class="fas fa-search"></i></a></small>
               </div>
             </div>
 
@@ -328,7 +328,7 @@
 
                 <div id="accordionProcesado">
                   <div class="card">
-                    <div class="card-header" id="headerProcesado">
+                    <div class="card-header distinction" id="headerProcesado">
                       <div class="arrow">
                       <a class="btn btn-link" data-toggle="collapse" data-target="#collapseProcesado" aria-expanded="true" aria-controls="collapseProcesado">
                         <h5 class="accordion-header-txt">El <span id="porcentajeTotalPreCata">100%</span> obtuvo un
@@ -345,8 +345,8 @@
                             <div class="card-header" id="headerProcesadoPreCata1">
                               <div class="arrow">
                               <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseProcesadoPreCata1" aria-expanded="false" aria-controls="collapseProcesadoPreCata1">
-                                <p class="accordion-header-txt">El <span id="porcentajeTotalAcidez">60%</span> con una acidez del
-                                  <span id="acidez">0.2</span> </p>
+                                <h6 class="accordion-header-txt">El <span id="porcentajeTotalAcidez">60%</span> con una acidez del
+                                  <span id="acidez">0.2</span> </h6>
                               </a>
                             </div>
                             </div>
@@ -366,8 +366,8 @@
                             <div class="card-header" id="headerProcesadoPreCata2">
                               <div class="arrow">
                               <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseProcesadoPreCata2" aria-expanded="false" aria-controls="collapseProcesadoPreCata2">
-                                <p class="accordion-header-txt">El <span id="porcentajeTotalAcidez">40%</span> con una acidez del
-                                  <span id="acidez">0.3</span> </p>
+                                <h6 class="accordion-header-txt">El <span id="porcentajeTotalAcidez">40%</span> con una acidez del
+                                  <span id="acidez">0.3</span> </h6>
                                 </a>
                               </div>
                             </div>
@@ -391,8 +391,8 @@
                 <br>
 
                 <small>Estos datos provienen de la<br><a id="cidProcesado"
-                    href="https://ipfs.io/ipfs/QmZ1jZkgqVqzKiSHSpbSKfTx2HBaYVyEAr9GBuxu28t5DT">información en la
-                    blockchain</a></small>
+                    href="https://ipfs.io/ipfs/QmZ1jZkgqVqzKiSHSpbSKfTx2HBaYVyEAr9GBuxu28t5DT">
+                    Blockchain <i class="fas fa-search"></i></a></small>
 
               </div>
             </div>
@@ -415,8 +415,8 @@
                     <div class="card-header" id="headerEnvasado">
                       <div class="arrow">
                       <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEnvasado" aria-expanded="false" aria-controls="collapseEnvasado">
-                        <p class="accordion-header-txt">El día <span id="fechaLote">01/01/2020</span> produciéndose <span
-                            id="udLoteTotalFecha">480 unidades</span> </p>
+                        <h6 class="accordion-header-txt">El día <span id="fechaLote">01/01/2020</span> produciéndose <span
+                            id="udLoteTotalFecha">480 unidades</span> </h6>
                       </a>
                     </div>
                     </div>
@@ -444,8 +444,8 @@
                 <br>
 
                 <small>Estos datos provienen de la<br><a id="cidEnvasado"
-                    href="https://ipfs.io/ipfs/QmWfTVJsYNNzJEU2PnqzcU7MwtU7YKzNE8jsXboTKSdKyh">información en la
-                    blockchain</a></small>
+                    href="https://ipfs.io/ipfs/QmWfTVJsYNNzJEU2PnqzcU7MwtU7YKzNE8jsXboTKSdKyh">
+                    Blockchain <i class="fas fa-search"></i></a></small>
 
                 <br>
               </div>
@@ -482,8 +482,7 @@
                   categoría de Frutado Verde».</p>
                 <img id="imgDO" class="img-fluid center-img" src="src/assets/DO.png" alt="D.O." width="250">
 
-                <small>Estos datos provienen de la<br><a id="cidValoraciones" href="https://ipfs.io/ipfs/">información
-                    en la blockchain</a></small>
+                <small>Estos datos provienen de la<br><a id="cidValoraciones" href="https://ipfs.io/ipfs/"> Blockchain <i class="fas fa-search"></i></a></small>
 
               </div>
             </div>
