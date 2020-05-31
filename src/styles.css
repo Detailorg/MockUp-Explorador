@@ -223,16 +223,18 @@ li {
 }
 
 .main-timeline .timeline::after {
-  height: 18px;
-  width: 18px;
-  right: -8px;
+  height: 6px;
+  width: 6px;
+  right: -3px;
 }
 
 .main-timeline .timeline-content {
   color: black;
+  border-style: solid;
+  border-color: rgb(230, 230, 230);
+  background-color: white;
   min-height: 50vh;
   border-width: 1px;
-  border-style: solid;
   text-align: right;
   padding: 30px 40px 30px 40px;
   margin: 0 auto;
@@ -240,6 +242,13 @@ li {
   display: block;
   overflow: hidden;
   position: relative;
+}
+
+.card {
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+  -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+  -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+  box-shadow: 0 5px 15px rgba(0,0,0,0);
 }
 
 .accordion-header-txt {
@@ -280,7 +289,7 @@ li {
 
 .main-timeline .timeline:nth-child(even):after {
   right: auto;
-  left: -8px;
+  left: -3px;
 }
 
 .main-timeline .timeline:nth-child(4n+2) .timeline-content {
@@ -614,6 +623,9 @@ Star Rating
   .main-timeline .timeline .timeline-content::after {
     width: 33%;
   }
+  #Home {
+    top: 2em;
+  }
 }
 
 @media only screen and (max-width:767px) {
@@ -639,7 +651,7 @@ Star Rating
 
   .main-timeline .timeline::after {
     right: auto;
-    left: -8px;
+    left: -3px;
   }
 
   .main-timeline .timeline .timeline-content {
@@ -681,5 +693,8 @@ Star Rating
 
   .main-timeline .timeline:nth-child(4n+4) .timeline-content {
     text-align: left;
+  }
+  #Home {
+    top: 2em;
   }
 }
