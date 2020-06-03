@@ -497,12 +497,13 @@
   <!--Third slide(Contact)-->
   <div class="full centerall" id="Contact">
       <div class="container col-sm-10 mt-5 mx-2 px-3 py-4 bg2-custom">
+        <div id="ContactChange"></div>
         <div class="row justify-content-center mb-0">
           <div class="mx-auto aos-repair">
             <h1 data-aos="zoom-in-up">Puntúa este Aceite</h1>
           </div>
         </div>
-        <form id="contact-form" method="post" role="form" enctype="text/plain">
+        <form id="contact-form" onsubmit="return false" method="post" role="form" enctype="text/plain">
           <div class="messages"></div>
 
           <div class="controls">
@@ -535,7 +536,7 @@
             <div class="col-sm-6" data-aos="fade-up">
               <h6 class="text-center my-3">Valora cuanto te ha gustado este Aceite<h6>
                   <div class="form-group">
-                    <div class="starRating-stars">
+                    <div class="rating starRating-stars">
                       <input class="starRating-input" type="radio" name="rating" value="1" id="rating-1" checked />
                       <label class="starRating-label" for="rating-1" aria-label="One"></label>
                       <input class="starRating-input" type="radio" name="rating" value="2" id="rating-2" checked />
@@ -557,7 +558,7 @@
           <div class="row justify-content-center aos-repair">
             <div class="mx-auto button-send" data-aos="flip-down">
               <input type="submit" class="btn btn-success btn-send disabled bold" tabindex="0" value="Enviar"
-                onclick="sendValoracion()">
+                id="sendValoracion">
             </div>
           </div>
         </form>
