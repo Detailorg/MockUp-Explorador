@@ -30,7 +30,6 @@ $(function(){
 
       fetch(urlGETkey, {
         method: 'GET',
-        mode: 'no-cors',
         headers:{
           'Content-Type': 'application/json',
           "Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYjZmZDc2YjI1YWVlOWUxMTFmMmY0NyIsIm5hbWUiOiJWIEciLCJpYXQiOjE1ODkwNTA4MzEsImV4cCI6MTY0OTA1MDgzMX0.WXyxFXkZCxQFF9ZXU_-P7wMw2WqJ_xKVq5WSH7zoGJw`
@@ -70,7 +69,6 @@ $(function(){
 
         fetch(urlPOSTfile, {
           method: 'POST',
-          mode: 'no-cors',
           body: data,
           headers:{
             "Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYjZmZDc2YjI1YWVlOWUxMTFmMmY0NyIsIm5hbWUiOiJWIEciLCJpYXQiOjE1ODkwNTA4MzEsImV4cCI6MTY0OTA1MDgzMX0.WXyxFXkZCxQFF9ZXU_-P7wMw2WqJ_xKVq5WSH7zoGJw`
@@ -112,7 +110,6 @@ $(function(){
 
           fetch(urlPOST, {
             method: 'POST',
-            mode: 'no-cors',
             body: data,
             headers:{
               'Content-Type': 'application/json',
